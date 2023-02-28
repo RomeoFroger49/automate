@@ -8,3 +8,8 @@ Le programme Automate permet de  :
 - de compléter l'automate
 - de déterminiser l'automate en détaillant les étapes
 - de sauvegarder la description d'un automate sous forme d'un fichier texte dont le format respecte celui en lecture
+
+
+Description technique : 
+
+- Je me suis aidé du logiciel graphviz qui permet de visualiser des graphes.
