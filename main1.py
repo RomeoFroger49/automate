@@ -17,13 +17,19 @@ lien = []
 for liens in data[1]:
     lien += [liens]
     
-# transformation de l'objet json en dict python 
+# transformation du dict 1 l'objet json en dict python 
 dictionnaire = {}
 
 for element in data[0]:
     dictionnaire[element] = data[0][element]
 
 print(dictionnaire)
+
+# transformation du dict 2 l'objet json en dict python
+dictionnaire_1 = dict()
+
+for element in data[1]:
+    dictionnaire_1[element] = data[1][element]
 
 # création du graphe
 dot = graphviz.Graph("automate")
@@ -58,6 +64,19 @@ for etat_restant in dictionnaire[etape[1]]:
         nb_noeud = 0
 
 
+#liens entre etats
+
+#lien --
+for couple in dictionnaire_1[lien[0]]:
+    dot.edge(couple[0], couple[1])
+
+#lien ->
+for couple in dictionnaire_1[lien[1]]:
+    dot.edge(couple[0], couple[1], dir="forward")
+
+#lien <->
+for couple in dictionnaire_1[lien[2]]:
+    dot.edge(couple[0], couple[1], dir="both")
 
 # Affichage du graphe
 dot.view()
