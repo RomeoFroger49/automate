@@ -13,3 +13,8 @@ Le programme Automate permet de  :
 Description technique : 
 
 - Je me suis aidé du logiciel graphviz qui permet de visualiser des graphes.
+
+Utilisation : 
+
+-veuillez renseignez vos états dans le dossier .json ainsi que leur lien dans le deuxieme dict
+- "->" = lien d'un etat vers un autre / "--" = lien simple entre deux états
