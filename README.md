@@ -16,5 +16,6 @@ Description technique :
 
 Utilisation : 
 
--veuillez renseignez vos états dans le dossier .json ainsi que leur lien dans le deuxieme dict
+- veuillez renseignez vos états dans le dossier .json ainsi que leur lien dans le deuxieme dict
 - "->" = lien d'un etat vers un autre / "--" = lien simple entre deux états
+- préciser le couple du type de lien en valeur sous forme de liste de 2 str
