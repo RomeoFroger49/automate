@@ -12,10 +12,10 @@ Le programme Automate permet de  :
 
 Description technique : 
 
-- Je me suis aidé du logiciel graphviz qui permet de visualiser des graphes.
+- Je me suis aidé du package graphviz qui facilite la création et le rendu des descriptions de graphes.
 
 Utilisation : 
 
 - veuillez renseignez vos états dans le dossier .json ainsi que leur lien dans le deuxieme dict
 - "->" = lien d'un etat vers un autre / "--" = lien simple entre deux états
-- préciser le couple du type de lien en valeur sous forme de liste de 2 str
+- préciser le couple du type de lien en valeur sous forme de liste de 2 
