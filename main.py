@@ -5,12 +5,19 @@ import json
 with open('fichier.json',"r") as f:
     data = json.load(f)
 
-# Convertir les données JSON en dictionnaire
+# Recueil des différentes clés du dictionnaire 1 du fichier json
 etape= []
 
 for etapes in data[0]:
     etape += [etapes]
 
+# Recueil des différentes clés du dictionnaire 2 du fichier json
+lien = []
+
+for liens in data[1]:
+    lien += [liens]
+    
+# transformation de l'objet json en dict python 
 dictionnaire = {}
 
 for element in data[0]:
@@ -18,8 +25,10 @@ for element in data[0]:
 
 print(dictionnaire)
 
+# création du graphe
 dot = graphviz.Graph("automate")
 
+# liste qui repertorie les etats ecris
 etat_ecris = []
 
 #creation des etats initiaux
